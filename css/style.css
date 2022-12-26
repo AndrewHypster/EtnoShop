@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    width: 1343px;
+}
+
+/*Початок шапки*/
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(34, 31, 31);
+    align-items: center;
+    display: flex;
+}
+
+.dws-menu li {
+    list-style: none;
+}
+
+.dws-menu ul, .dws-menu ol {
+    margin-left: 10px;
+    list-style: none;
+}
+
+.dws-menu > ul li a p, #aboutUs, nav ul li a img {
+    text-decoration: none;
+    color: rgb(34, 31, 31);
+    padding: 10px;
+    background-color: aliceblue;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.dws-menu li a p:hover, #aboutUs:hover, nav ul li a img {
+    color: aliceblue;
+    background-color: #776c6c;
+    box-shadow: 1px 5px 10px -1px #fff;
+    transition: all 0.3s ease;
+}
+
+#aboutUs {
+    margin-right: 15px;
+}
+/*sub menu*/
+
+.dws-menu li ul{
+    margin-top: 71px;
+    position: fixed;
+    min-width: 150px;
+}
+
+.invisible {
+    display: none;
+}
+
+.dws-menu li > ul li {
+    padding: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+
+.dws-menu li > ul li p {color: rgb(34, 31, 31);}
+
+.dws-menu li > ul li:hover {
+    color: aliceblue;
+    background-color: #776c6c;
+    box-shadow: 1px 5px 10px -1px #fff;
+    transition: all 0.3s ease;
+}
+
+.dws-menu li > ul p:hover {
+    color: aliceblue;
+    box-shadow: 0px 0px 0px 0px #fff;
+    transition: none;
+}
+
+.logo {
+    width: auto;
+    align-items: center;
+    margin: 0px auto;
+    display: flex;
+}
+
+#icon {
+    margin: 10px 20px;
+    padding: 3px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 45px;
+    display: block;
+}
+
+#logo-name {
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+    display: block;
+}
+/*Кінець шапки*/
+
+nav {
+    justify-content: space-between;
+    width: fit-content;
+    position: fixed;
+    display: flex;
+}
+
+#navOrnam {
+    z-index: -1;    /* перетягає вишивку на задній план */
+    position: fixed;
+    margin-top: 71px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#ornament {
+    width: 150px;
+    display: flex;
+}
+
+#content {
+    margin: 0px 150px;
+    padding-top: 90px;
+}
+
+#main-goal {
+    color: aliceblue;
+    text-align: center;
+    margin: 50px 50px;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #776c6c;
+    border-radius: 50px;
+}
+
+#main-goal h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#main-goal p {
+    font-size: 20px;
+}
+
+/* Скриті заголловки каталогу */
+#magnetTitle, #paintTitle {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#magnetTitle div, #paintTitle div {
+    justify-content: center;
+    display: flex;
+}
+
+#magnetTitle div h1, #paintTitle div h1 {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px 0px;
+    background-color: rgb(143, 36, 36);
+    color: #ecc776;
+    display: block;
+}
+
+/* Товари */
+.shop {
+    justify-content: center;
+    margin: 0px 50px 10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tovar{
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #ccbaba;
+    border-radius: 15px;
+    width: 200px;
+    display: block;
+}
+
+#tovar:hover{
+    background-color: #ecc776;
+    box-shadow: 1px 5px 10px -1px rgb(36, 23, 23);
+    transition: all 0.3s ease;
+}
+
+#truzyb{
+    border-radius: 15px 15px 0px 0px;
+    width: 200px;
+    display: block;
+}
+
+#tovarTitle{
+    width: 200px;
+    display: flex;
+}
+
+#tovarName {
+    font-size: 25px;
+}
+
+#tovarCost{
+    margin: 0 0 0 auto;
+    margin-left: auto;
+    color: rgb(38, 134, 35);
+    text-align: right;
+}
+
+#tovarText{
+    color: rgb(41, 41, 41);
+    text-align: center;
+    display: block;
+}
+
+/* Сторінка з певним товаром */
+
+#opus, #opusPaints {
+    text-align: center;
+    margin: 0px 180px;
+}
+
+#opusTitle{
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 43px;
+}
+
+#stars {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+#stars img {
+    width: 20px;
+}
+
+#stars a {
+    margin: 0px 10px;
+    color: #3e77aa;
+}
+
+#stars a:hover {
+    text-decoration: underline;
+    color: #b63737;
+}
+
+#product {
+    display: flex;
+}
+
+#product_left {
+    margin: 0px auto;
+}
+
+#imgTovar, #imgPaint {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+#product_right {
+    text-align: left;
+    margin: 0px auto;
+    width: 300px;
+}
+
+#nayavnist {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    height: 16px;
+    display: flex;
+}
+
+#nayavnist img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+#nayavnist p {
+    display: block;
+}
+
+#cost {
+    margin-top: 20px;
+    display: flex;
+}
+
+#cost h3{
+    margin-right: 5px;
+}
+
+#opusTovary, #opusPaint, #oplata, #dostavka, #zakazTovary{
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+#opusTovary h4, #opusPaint h4{
+    color: rgb(97, 97, 97);
+    margin-bottom: 10px;
+}
+
+#oplata, #dostavka, #zakazTovary {
+    display: flex;
+}
+
+#oplata img, #dostavka img, #zakazTovary img {
+    margin: auto auto;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#dostavka img {
+    width: 35px;
+    height: 35px;
+}
+
+#dostavka div hr{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+/* Відгуки */
+#vidhyku_magnet, #vidhyku_paint {
+    margin: 20px;
+}
+
+#vidhyku_magnet div, #vidhyku_paint div {
+    margin-top: 20px;
+    display: flex;
+}
+
+#vidhyku_magnet div img, #vidhyku_paint div img {
+    width: 50px;
+    height: 50px;
+}
+
+#vidhyku_magnet div h4, #vidhyku_paint div h4 {
+    margin: auto 15px;
+}
+
+#vidhyku_magnet div p, #vidhyku_paint div p {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+#sviyVidhyk {
+    margin: 20px 200px;
+    text-align: center;
+}
+
+#sviyVidhyk form p {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#sviyVidhyk form textarea{
+    margin: 20px 0px;
+    text-align: left;
+}
+
+#sviyVidhyk h3 {
+    margin: auto;
+    margin-bottom: 20px;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(55, 121, 34);
+}
+
+#vidhykPovid {
+    color: #30580e;
+    margin-bottom: 10px;
+}
+/* Про нас About Us */
+#aboutUsPage {
+    text-align: center;
+}
+
+/* Контакти */
+#footer {
+    width: 100%;
+    position: sticky;
+    color: aliceblue;
+    background-color: rgb(34, 31, 31);
+    padding: 10px 0px 30px 0px;
+}
+
+#margin-footer {
+    text-align: center;
+}
+
+#contacts{
+    margin: 20px 20px;
+    display: flex;
+}
+
+#coordenate {
+    margin: 0px auto;
+}
+
+#city {
+    color: rgb(42, 148, 65);
+    text-decoration: underline;
+}
+
+#phone-number {
+    margin: 0px auto;
+    display: flex;
+}
+
+#number{
+    margin: 0px 0px 0px 7px;
+}
